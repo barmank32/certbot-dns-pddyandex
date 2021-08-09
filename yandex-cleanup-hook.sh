@@ -15,7 +15,6 @@ if [ -z "${DOMAIN}" ]; then
         exit
 fi
 
-API_KEY=${PDDTOKENMAP["$DOMAIN"]}
 if [ -z "${API_KEY}" ]; then
         echo "No API_KEY for DOMAIN=${DOMAIN}, exit"
         exit

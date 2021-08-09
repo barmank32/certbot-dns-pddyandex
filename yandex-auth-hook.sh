@@ -11,19 +11,16 @@ if [ -z "${DOMAIN}" ]; then
         exit
 fi
 
-API_KEY=${PDDTOKENMAP["$DOMAIN"]}
 if [ -z "${API_KEY}" ]; then
         echo "No API_KEY for DOMAIN=${DOMAIN}, exit"
         exit
 fi
 
-DOMAINTTL=${TTLMAP["$DOMAIN"]}
 if [ -z "${DOMAINTTL}" ]; then
         echo "No TTL for DOMAIN=${DOMAIN}, exit"
         exit
 fi
 
-DOMAINSLEEP=${SLEEPMAP["$DOMAIN"]}
 if [ -z "${DOMAINSLEEP}" ]; then
         echo "No SLEEP for DOMAIN=${DOMAIN}, exit"
         exit
